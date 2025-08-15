@@ -18,7 +18,7 @@ const TempDetails = () => {
             alt={item.title}
             className="w-full max-w-lg object-cover rounded-md mb-6"
           />
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{item.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">{item.title}</h1>
           <p className="text-lg text-gray-300">{item.description}</p>
         </div>
 

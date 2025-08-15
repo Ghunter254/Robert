@@ -32,7 +32,7 @@ const ServiceHighlights = () => {
             key={index}
             className="flex flex-col items-center p-6 rounded-lg bg-gray-900 shadow hover:shadow-lg transition"
           >
-            <div className="w-16 h-16 mb-4">
+            <div className="w-16 h-16 mb-4 ">
               <img
                 src={item.icon}
                 alt={item.title}

@@ -59,7 +59,7 @@ const Selector = () => {
         <li className="text-lg font-bold">Cost: ${cost}</li>
 
         <li>
-          <button className="bg-[#1e3a8a] hover:bg-blue-700 text-white px-6 py-3 rounded-lg w-full font-semibold">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">
             Add to cart
           </button>
         </li>
