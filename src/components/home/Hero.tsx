@@ -17,10 +17,10 @@ const Hero = () => {
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
-              to="/order"
+              to="/custom"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition"
             >
-              Start Your Order
+              Start with your file
             </Link>
             <Link
               to="/templates"
@@ -32,9 +32,9 @@ const Hero = () => {
         </div>
 
         {/* Image Section */}
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center py-6 px-4 md:py-8 md:px-6">
           <img
-            src="/images/3d-printer.jpg"
+            src="/assets/3dprinting1.png"
             alt="3D Printer"
             className="rounded-lg shadow-lg w-full max-w-md"
           />

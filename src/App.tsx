@@ -6,6 +6,8 @@ import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
+import Templates from "./pages/Templates";
+import CustomFile from "./pages/CustomFile";
 import AppLayout from "./layouts/AppLayout";
 import "./index.css";
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="contact" element={<ContactUs />} />
         <Route path="cart" element={<Cart />} />
         <Route path="login" element={<Login />} />
+        <Route path="templates" element={<Templates />} />
+        <Route path="custom" element={<CustomFile />} />
       </Route>
     </Routes>
   );
