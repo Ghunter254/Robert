@@ -1,24 +1,24 @@
-import { Routes, Route } from "react-router-dom";
-import "./index.css";
-import { Toaster } from "sonner";
-import Welcome from "./pages/welcome";
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import TempDetails from './pages/TempDetails';
+import About from './pages/About';
+import Services from './pages/Services';
+import ContactUs from './pages/ContactUs';
+import Cart from './pages/Cart';
+import Login from './pages/Login';
 
-const App = () => {
+function App() {
   return (
-    <main className="flex h-screen w-full">
-      <Routes>
-        <Route path="/" element={<Welcome />}></Route>
-      </Routes>
-      <Toaster />
-    </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/item/:id" element={<TempDetails />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/contact" element={<ContactUs />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   );
-};
-
-// <Route element={<AuthLayout />}>
-//   <Route path="/" element={<Login />} />
-//   <Route path="/forgot-password" element={<ForgotPassword />} />
-//   <Route path="/verify-email" element={<VerifyEmail />} />
-//   <Route path="/new-password" element={<NewPassword />} />
-// </Route>
+}
 
 export default App;

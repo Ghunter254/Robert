@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <QueryClientProvider client={queryClient}>
-          <App />
+          <App/>
         </QueryClientProvider>
       </ErrorBoundary>
     </BrowserRouter>
