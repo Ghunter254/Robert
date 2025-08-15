@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import templates from "@/data/templateData";
 import Hero from "@/components/home/Hero";
+import ServiceHighlights from "@/components/home/SreviceHighlights";
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,6 +23,7 @@ const Home = () => {
       <div className="max-w-6xl">
         <div className="mb-4">
           <Hero />
+          <ServiceHighlights/>
         </div>
         <div className="mx-auto">
           {/* Search Bar */}

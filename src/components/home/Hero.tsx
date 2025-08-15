@@ -32,9 +32,9 @@ const Hero = () => {
         </div>
 
         {/* Image Section */}
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center py-6 px-4 md:py-8 md:px-6">
           <img
-            src="/images/3d-printer.jpg"
+            src="/assets/3dprinting1.png"
             alt="3D Printer"
             className="rounded-lg shadow-lg w-full max-w-md"
           />
