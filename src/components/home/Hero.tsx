@@ -17,10 +17,10 @@ const Hero = () => {
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
-              to="/order"
+              to="/custom"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition"
             >
-              Start Your Order
+              Start with your file
             </Link>
             <Link
               to="/templates"

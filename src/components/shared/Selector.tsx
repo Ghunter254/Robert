@@ -1,39 +1,71 @@
-import React from 'react'
+import React from "react";
 
 const Selector = () => {
-    const cost=300;
+  const cost = 300;
+
   return (
     <div>
-        <ul>
-          <li>Material:
-            <select>
-              <option>PLA</option>
-              <option>Nylon</option>
-              <option>Resin</option>
-            </select>
-          </li>
-          <li>Color:
-            <select>
-              <option>Black</option>
-              <option>White</option>
-              <option>Red</option>
-              <option>Blue</option>
-              <option>Orange</option>
-            </select>
-          </li>
-          <li>Quantity: <input type="number" min="1" max="10" defaultValue="1" /></li>
-          <li>Scale: <input type="number" min="60" max="160" defaultValue="100" /></li>
-          <li>Standard:
-            <select>
-              <option>Standard</option>
-              <option>Express</option>
-            </select>
-          </li>
-          <li>Cost: {cost}</li>
-          <button className='return'>Add to cart</button>
-        </ul>
-    </div>
-  )
-}
+      <ul className="space-y-6">
+        <li className="flex flex-col">
+          <label className="mb-2 font-semibold">Material:</label>
+          <select className="bg-[#0b0f1a] border border-[#1e3a8a] text-white p-2 rounded focus:outline-none">
+            <option>PLA</option>
+            <option>Nylon</option>
+            <option>Resin</option>
+          </select>
+        </li>
 
-export default Selector
+        <li className="flex flex-col">
+          <label className="mb-2 font-semibold">Color:</label>
+          <select className="bg-[#0b0f1a] border border-[#1e3a8a] text-white p-2 rounded focus:outline-none">
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Orange</option>
+          </select>
+        </li>
+
+        <li className="flex flex-col">
+          <label className="mb-2 font-semibold">Quantity:</label>
+          <input
+            type="number"
+            min="1"
+            max="10"
+            defaultValue="1"
+            className="bg-[#0b0f1a] border border-[#1e3a8a] text-white p-2 rounded focus:outline-none"
+          />
+        </li>
+
+        <li className="flex flex-col">
+          <label className="mb-2 font-semibold">Scale:</label>
+          <input
+            type="number"
+            min="60"
+            max="160"
+            defaultValue="100"
+            className="bg-[#0b0f1a] border border-[#1e3a8a] text-white p-2 rounded focus:outline-none"
+          />
+        </li>
+
+        <li className="flex flex-col">
+          <label className="mb-2 font-semibold">Standard:</label>
+          <select className="bg-[#0b0f1a] border border-[#1e3a8a] text-white p-2 rounded focus:outline-none">
+            <option>Standard</option>
+            <option>Express</option>
+          </select>
+        </li>
+
+        <li className="text-lg font-bold">Cost: ${cost}</li>
+
+        <li>
+          <button className="bg-[#1e3a8a] hover:bg-blue-700 text-white px-6 py-3 rounded-lg w-full font-semibold">
+            Add to cart
+          </button>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Selector;
