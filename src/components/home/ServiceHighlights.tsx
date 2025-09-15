@@ -25,7 +25,7 @@ const highlights = [
 
 const ServiceHighlights = () => {
   return (
-    <section className="bg-black text-white py-16 px-6">
+    <section className=" text-white py-16 px-6 flex">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
         {highlights.map((item, index) => (
           <div

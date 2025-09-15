@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-black text-white py-16 px-6">
+    <section className="w-full text-white py-16 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Section */}
         <div className="flex-1 text-center md:text-left">
