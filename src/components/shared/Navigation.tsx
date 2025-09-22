@@ -10,7 +10,7 @@ const navLinks = [
 
 function Navigation() {
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className=" shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center h-16 items-center">
           <ul className="flex space-x-8">
@@ -19,7 +19,7 @@ function Navigation() {
                 <NavLink
                   to={link.path}
                   className={({ isActive }) =>
-                    `text-black transition-all duration-200 ${
+                    `text-white transition-all duration-200 ${
                       isActive
                         ? "underline underline-offset-4"
                         : "hover:underline underline-offset-4"
