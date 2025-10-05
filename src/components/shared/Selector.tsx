@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { useCart } from "@/components/Cart/useCart";
 
 type SelectorProps = {
-  files: File[]; // now accepts ALL files
+  files?: File[];
+  templateId?: string;
 };
+
 
 const Selector = ({ files }: SelectorProps) => {
   const { addToCart } = useCart();
