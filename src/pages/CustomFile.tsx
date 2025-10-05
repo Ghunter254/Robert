@@ -7,6 +7,7 @@ const CustomFile = () => {
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
 
   return (
+    
     <div className="bg-[#0b0f1a] text-white min-h-screen py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
         

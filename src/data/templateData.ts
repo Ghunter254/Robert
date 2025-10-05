@@ -5,6 +5,8 @@ const templates = [
     image: '/assets/benchy.jpg',
     description: 'This is a template to help you get started on your creative journey.',
     cost: 300, // in Ksh
+    stlFileId: "68e21a27000b918dd250", // Appwrite file ID
+    bucketId: "stl_templates"
   },
   {
     id: '002',
@@ -12,6 +14,8 @@ const templates = [
     image: '/assets/Fan.jpg',
     description: 'This is a template to help you get started on your creative journey.',
     cost: 300, // in Ksh
+    stlFileId: "68e21b5b0037af4411df", // Appwrite file ID
+    bucketId: "stl_templates"
   },
   {
     id: '003',
@@ -19,6 +23,8 @@ const templates = [
     image: '/assets/Box.jpg',
     description: 'This is a template to help you get started on your creative journey.',
     cost: 300, // in Ksh
+    stlFileId: "68e21bf3000144ddedce", // Appwrite file ID
+    bucketId: "stl_templates"
   },
 ];
 

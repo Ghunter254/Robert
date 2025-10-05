@@ -24,7 +24,7 @@ const TempDetails = () => {
 
         {/* Right Side - Selector */}
         <div className="flex-1 bg-[#1e293b] p-6 rounded-lg shadow-lg">
-          <Selector />
+          <Selector templateId={item.id} />
         </div>
       </div>
     </div>

@@ -1,14 +1,20 @@
 import { NavLink } from "react-router-dom";
-
-const navLinks = [
-  { path: "/", label: "Home" },
-  { path: "/about", label: "About us" },
-  { path: "/services", label: "Services" },
-  { path: "/contact", label: "Contact us" },
-  { path: "/cart", label: "View Cart" },
-];
+import { useAuth } from "@/context/AuthContext";
 
 function Navigation() {
+  const { user } = useAuth();
+
+  const navLinks = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About us" },
+    { path: "/services", label: "Services" },
+    { path: "/contact", label: "Contact us" },
+    { path: "/cart", label: "View Cart" },
+    ...(user?.role === "admin"
+      ? [{ path: "/order-tracking", label: "Order Tracking" }]
+      : []),
+  ];
+
   return (
     <nav className=" shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

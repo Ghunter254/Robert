@@ -9,6 +9,9 @@ import Login from "./pages/Login";
 import Templates from "./pages/Templates";
 import CustomFile from "./pages/CustomFile";
 import AppLayout from "./layouts/AppLayout";
+import AdminRoute from "./components/AdminRoute";
+import OrderTracking from "./pages/OrderTracking";
+import Checkout from "./pages/Checkout";
 import "./index.css";
 
 function App() {
@@ -24,6 +27,17 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="templates" element={<Templates />} />
         <Route path="custom" element={<CustomFile />} />
+        <Route path="checkout" element={<Checkout/>}/>
+                
+        {/* 🔒 Admin-only route */}
+        <Route
+          path="order-tracking"
+          element={
+            <AdminRoute>
+              <OrderTracking />
+            </AdminRoute>
+          }
+        />
       </Route>
     </Routes>
   );
